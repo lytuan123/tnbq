@@ -1,0 +1,503 @@
+2025-02-05 09:34:39,452 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-15-8c5067c35547>:27
+2025-02-05 09:34:39,456 - __main__ - INFO - Kiểm tra index_path: /content/output/faiss_index.bin - <ipython-input-15-8c5067c35547>:75
+2025-02-05 09:34:39,460 - __main__ - INFO - Kiểm tra texts_path: /content/output/processed_texts.pkl - <ipython-input-15-8c5067c35547>:76
+2025-02-05 09:34:39,463 - __main__ - INFO - Đang load FAISS index... - <ipython-input-15-8c5067c35547>:84
+2025-02-05 09:34:39,465 - __main__ - INFO - FAISS index loaded: <class 'faiss.swigfaiss_avx512.IndexFlatL2'> - <ipython-input-15-8c5067c35547>:86
+2025-02-05 09:34:39,467 - __main__ - INFO - Đang load processed texts... - <ipython-input-15-8c5067c35547>:89
+2025-02-05 09:34:39,469 - __main__ - INFO - Loaded 31 texts - <ipython-input-15-8c5067c35547>:92
+2025-02-05 09:35:10,159 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-16-c589c626efe1>:27
+2025-02-05 09:35:10,159 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-16-c589c626efe1>:27
+2025-02-05 09:35:10,165 - __main__ - INFO - Kiểm tra index_path: /content/output/faiss_index.bin - <ipython-input-16-c589c626efe1>:75
+2025-02-05 09:35:10,165 - __main__ - INFO - Kiểm tra index_path: /content/output/faiss_index.bin - <ipython-input-16-c589c626efe1>:75
+2025-02-05 09:35:10,169 - __main__ - INFO - Kiểm tra texts_path: /content/output/processed_texts.pkl - <ipython-input-16-c589c626efe1>:76
+2025-02-05 09:35:10,169 - __main__ - INFO - Kiểm tra texts_path: /content/output/processed_texts.pkl - <ipython-input-16-c589c626efe1>:76
+2025-02-05 09:35:10,172 - __main__ - INFO - Đang load FAISS index... - <ipython-input-16-c589c626efe1>:84
+2025-02-05 09:35:10,172 - __main__ - INFO - Đang load FAISS index... - <ipython-input-16-c589c626efe1>:84
+2025-02-05 09:35:10,177 - __main__ - INFO - FAISS index loaded: <class 'faiss.swigfaiss_avx512.IndexFlatL2'> - <ipython-input-16-c589c626efe1>:86
+2025-02-05 09:35:10,177 - __main__ - INFO - FAISS index loaded: <class 'faiss.swigfaiss_avx512.IndexFlatL2'> - <ipython-input-16-c589c626efe1>:86
+2025-02-05 09:35:10,181 - __main__ - INFO - Đang load processed texts... - <ipython-input-16-c589c626efe1>:89
+2025-02-05 09:35:10,181 - __main__ - INFO - Đang load processed texts... - <ipython-input-16-c589c626efe1>:89
+2025-02-05 09:35:10,185 - __main__ - INFO - Loaded 31 texts - <ipython-input-16-c589c626efe1>:92
+2025-02-05 09:35:10,185 - __main__ - INFO - Loaded 31 texts - <ipython-input-16-c589c626efe1>:92
+2025-02-05 09:35:23,703 - __main__ - INFO - Xử lý câu hỏi: xin chào
+ - <ipython-input-16-c589c626efe1>:141
+2025-02-05 09:35:23,703 - __main__ - INFO - Xử lý câu hỏi: xin chào
+ - <ipython-input-16-c589c626efe1>:141
+2025-02-05 09:35:23,707 - __main__ - INFO - Tìm context cho query: xin chào
+ - <ipython-input-16-c589c626efe1>:116
+2025-02-05 09:35:23,707 - __main__ - INFO - Tìm context cho query: xin chào
+ - <ipython-input-16-c589c626efe1>:116
+2025-02-05 09:35:23,710 - __main__ - INFO - Đang lấy embedding cho text: xin chào
+... - <ipython-input-16-c589c626efe1>:101
+2025-02-05 09:35:23,710 - __main__ - INFO - Đang lấy embedding cho text: xin chào
+... - <ipython-input-16-c589c626efe1>:101
+2025-02-05 09:35:23,716 - __main__ - ERROR - Lỗi trong get_embedding - <ipython-input-16-c589c626efe1>:110
+Traceback (most recent call last):
+  File "<ipython-input-16-c589c626efe1>", line 102, in get_embedding
+    response = openai.Embedding.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-02-05 09:35:23,716 - __main__ - ERROR - Lỗi trong get_embedding - <ipython-input-16-c589c626efe1>:110
+Traceback (most recent call last):
+  File "<ipython-input-16-c589c626efe1>", line 102, in get_embedding
+    response = openai.Embedding.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-02-05 09:35:23,719 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-16-c589c626efe1>:135
+Traceback (most recent call last):
+  File "<ipython-input-16-c589c626efe1>", line 119, in get_relevant_context
+    query_embedding = self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-16-c589c626efe1>", line 102, in get_embedding
+    response = openai.Embedding.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-02-05 09:35:23,719 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-16-c589c626efe1>:135
+Traceback (most recent call last):
+  File "<ipython-input-16-c589c626efe1>", line 119, in get_relevant_context
+    query_embedding = self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-16-c589c626efe1>", line 102, in get_embedding
+    response = openai.Embedding.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/openai/lib/_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-02-05 09:39:33,065 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-17-183902454085>:29
+2025-02-05 09:39:33,065 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-17-183902454085>:29
+2025-02-05 09:39:33,065 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-17-183902454085>:29
+2025-02-05 09:39:33,073 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-17-183902454085>:86
+2025-02-05 09:39:33,073 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-17-183902454085>:86
+2025-02-05 09:39:33,073 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-17-183902454085>:86
+2025-02-05 09:39:47,194 - __main__ - WARNING - Retry 1/3 for embedding - <ipython-input-17-183902454085>:105
+2025-02-05 09:39:47,194 - __main__ - WARNING - Retry 1/3 for embedding - <ipython-input-17-183902454085>:105
+2025-02-05 09:39:47,194 - __main__ - WARNING - Retry 1/3 for embedding - <ipython-input-17-183902454085>:105
+2025-02-05 09:39:49,238 - __main__ - WARNING - Retry 2/3 for embedding - <ipython-input-17-183902454085>:105
+2025-02-05 09:39:49,238 - __main__ - WARNING - Retry 2/3 for embedding - <ipython-input-17-183902454085>:105
+2025-02-05 09:39:49,238 - __main__ - WARNING - Retry 2/3 for embedding - <ipython-input-17-183902454085>:105
+2025-02-05 09:39:51,198 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-17-183902454085>:131
+Traceback (most recent call last):
+  File "<ipython-input-17-183902454085>", line 111, in get_relevant_context
+    query_embedding = await self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 97, in get_embedding
+    response = await self.client.embeddings.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object CreateEmbeddingResponse can't be used in 'await' expression
+2025-02-05 09:39:51,198 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-17-183902454085>:131
+Traceback (most recent call last):
+  File "<ipython-input-17-183902454085>", line 111, in get_relevant_context
+    query_embedding = await self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 97, in get_embedding
+    response = await self.client.embeddings.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object CreateEmbeddingResponse can't be used in 'await' expression
+2025-02-05 09:39:51,198 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-17-183902454085>:131
+Traceback (most recent call last):
+  File "<ipython-input-17-183902454085>", line 111, in get_relevant_context
+    query_embedding = await self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 97, in get_embedding
+    response = await self.client.embeddings.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object CreateEmbeddingResponse can't be used in 'await' expression
+2025-02-05 09:39:51,205 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-17-183902454085>:160
+Traceback (most recent call last):
+  File "<ipython-input-17-183902454085>", line 140, in get_answer
+    context = await self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 111, in get_relevant_context
+    query_embedding = await self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 97, in get_embedding
+    response = await self.client.embeddings.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object CreateEmbeddingResponse can't be used in 'await' expression
+2025-02-05 09:39:51,205 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-17-183902454085>:160
+Traceback (most recent call last):
+  File "<ipython-input-17-183902454085>", line 140, in get_answer
+    context = await self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 111, in get_relevant_context
+    query_embedding = await self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 97, in get_embedding
+    response = await self.client.embeddings.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object CreateEmbeddingResponse can't be used in 'await' expression
+2025-02-05 09:39:51,205 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-17-183902454085>:160
+Traceback (most recent call last):
+  File "<ipython-input-17-183902454085>", line 140, in get_answer
+    context = await self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 111, in get_relevant_context
+    query_embedding = await self.get_embedding(query)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-17-183902454085>", line 97, in get_embedding
+    response = await self.client.embeddings.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object CreateEmbeddingResponse can't be used in 'await' expression
+2025-02-05 09:40:57,831 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-18-dfb1227dc7d8>:29
+2025-02-05 09:40:57,831 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-18-dfb1227dc7d8>:29
+2025-02-05 09:40:57,831 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-18-dfb1227dc7d8>:29
+2025-02-05 09:40:57,831 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-18-dfb1227dc7d8>:29
+2025-02-05 09:40:57,843 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-18-dfb1227dc7d8>:86
+2025-02-05 09:40:57,843 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-18-dfb1227dc7d8>:86
+2025-02-05 09:40:57,843 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-18-dfb1227dc7d8>:86
+2025-02-05 09:40:57,843 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-18-dfb1227dc7d8>:86
+2025-02-05 09:42:37,031 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-19-af45c6f2b5c0>:29
+2025-02-05 09:42:37,031 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-19-af45c6f2b5c0>:29
+2025-02-05 09:42:37,031 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-19-af45c6f2b5c0>:29
+2025-02-05 09:42:37,031 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-19-af45c6f2b5c0>:29
+2025-02-05 09:42:37,031 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-19-af45c6f2b5c0>:29
+2025-02-05 09:42:37,046 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-19-af45c6f2b5c0>:86
+2025-02-05 09:42:37,046 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-19-af45c6f2b5c0>:86
+2025-02-05 09:42:37,046 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-19-af45c6f2b5c0>:86
+2025-02-05 09:42:37,046 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-19-af45c6f2b5c0>:86
+2025-02-05 09:42:37,046 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-19-af45c6f2b5c0>:86
+2025-02-05 09:44:25,882 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-20-b069c4c4d0df>:29
+2025-02-05 09:44:25,882 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-20-b069c4c4d0df>:29
+2025-02-05 09:44:25,882 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-20-b069c4c4d0df>:29
+2025-02-05 09:44:25,882 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-20-b069c4c4d0df>:29
+2025-02-05 09:44:25,882 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-20-b069c4c4d0df>:29
+2025-02-05 09:44:25,882 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-20-b069c4c4d0df>:29
+2025-02-05 09:44:25,896 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-20-b069c4c4d0df>:86
+2025-02-05 09:44:25,896 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-20-b069c4c4d0df>:86
+2025-02-05 09:44:25,896 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-20-b069c4c4d0df>:86
+2025-02-05 09:44:25,896 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-20-b069c4c4d0df>:86
+2025-02-05 09:44:25,896 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-20-b069c4c4d0df>:86
+2025-02-05 09:44:25,896 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-20-b069c4c4d0df>:86
+2025-02-05 09:48:25,967 - __main__ - INFO - Successfully loaded 31 pages from /content/TNBQ.pdf - <ipython-input-21-3c51cead5e85>:79
+2025-02-05 09:48:25,967 - __main__ - INFO - Successfully loaded 31 pages from /content/TNBQ.pdf - <ipython-input-21-3c51cead5e85>:79
+2025-02-05 09:48:25,967 - __main__ - INFO - Successfully loaded 31 pages from /content/TNBQ.pdf - <ipython-input-21-3c51cead5e85>:79
+2025-02-05 09:48:25,967 - __main__ - INFO - Successfully loaded 31 pages from /content/TNBQ.pdf - <ipython-input-21-3c51cead5e85>:79
+2025-02-05 09:48:25,967 - __main__ - INFO - Successfully loaded 31 pages from /content/TNBQ.pdf - <ipython-input-21-3c51cead5e85>:79
+2025-02-05 09:48:25,967 - __main__ - INFO - Successfully loaded 31 pages from /content/TNBQ.pdf - <ipython-input-21-3c51cead5e85>:79
+2025-02-05 09:49:09,184 - __main__ - INFO - Successfully created embeddings for 31 chunks - <ipython-input-21-3c51cead5e85>:206
+2025-02-05 09:49:09,184 - __main__ - INFO - Successfully created embeddings for 31 chunks - <ipython-input-21-3c51cead5e85>:206
+2025-02-05 09:49:09,184 - __main__ - INFO - Successfully created embeddings for 31 chunks - <ipython-input-21-3c51cead5e85>:206
+2025-02-05 09:49:09,184 - __main__ - INFO - Successfully created embeddings for 31 chunks - <ipython-input-21-3c51cead5e85>:206
+2025-02-05 09:49:09,184 - __main__ - INFO - Successfully created embeddings for 31 chunks - <ipython-input-21-3c51cead5e85>:206
+2025-02-05 09:49:09,184 - __main__ - INFO - Successfully created embeddings for 31 chunks - <ipython-input-21-3c51cead5e85>:206
+2025-02-05 09:49:09,198 - __main__ - INFO - Successfully saved artifacts to output - <ipython-input-21-3c51cead5e85>:237
+2025-02-05 09:49:09,198 - __main__ - INFO - Successfully saved artifacts to output - <ipython-input-21-3c51cead5e85>:237
+2025-02-05 09:49:09,198 - __main__ - INFO - Successfully saved artifacts to output - <ipython-input-21-3c51cead5e85>:237
+2025-02-05 09:49:09,198 - __main__ - INFO - Successfully saved artifacts to output - <ipython-input-21-3c51cead5e85>:237
+2025-02-05 09:49:09,198 - __main__ - INFO - Successfully saved artifacts to output - <ipython-input-21-3c51cead5e85>:237
+2025-02-05 09:49:09,198 - __main__ - INFO - Successfully saved artifacts to output - <ipython-input-21-3c51cead5e85>:237
+2025-02-05 09:49:21,585 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-22-b069c4c4d0df>:29
+2025-02-05 09:49:21,585 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-22-b069c4c4d0df>:29
+2025-02-05 09:49:21,585 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-22-b069c4c4d0df>:29
+2025-02-05 09:49:21,585 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-22-b069c4c4d0df>:29
+2025-02-05 09:49:21,585 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-22-b069c4c4d0df>:29
+2025-02-05 09:49:21,585 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-22-b069c4c4d0df>:29
+2025-02-05 09:49:21,585 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-22-b069c4c4d0df>:29
+2025-02-05 09:49:21,600 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-22-b069c4c4d0df>:86
+2025-02-05 09:49:21,600 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-22-b069c4c4d0df>:86
+2025-02-05 09:49:21,600 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-22-b069c4c4d0df>:86
+2025-02-05 09:49:21,600 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-22-b069c4c4d0df>:86
+2025-02-05 09:49:21,600 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-22-b069c4c4d0df>:86
+2025-02-05 09:49:21,600 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-22-b069c4c4d0df>:86
+2025-02-05 09:49:21,600 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-22-b069c4c4d0df>:86
+2025-02-05 09:50:00,723 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-22-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,723 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-22-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,723 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-22-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,723 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-22-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,723 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-22-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,723 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-22-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,723 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-22-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,737 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-22-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,737 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-22-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,737 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-22-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,737 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-22-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,737 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-22-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,737 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-22-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:00,737 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-22-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-22-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-22-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,821 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-23-b069c4c4d0df>:29
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:28,836 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-23-b069c4c4d0df>:86
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,097 - __main__ - ERROR - Lỗi trong get_relevant_context - <ipython-input-23-b069c4c4d0df>:131
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:50:46,117 - __main__ - ERROR - Lỗi trong get_answer - <ipython-input-23-b069c4c4d0df>:160
+Traceback (most recent call last):
+  File "<ipython-input-23-b069c4c4d0df>", line 140, in get_answer
+    context = self.get_relevant_context(query)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<ipython-input-23-b069c4c4d0df>", line 128, in get_relevant_context
+    return "\n\n".join(contexts)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, dict found
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output - <ipython-input-24-cbc7285217fb>:29
+2025-02-05 09:52:19,486 - __main__ - INFO - Đường dẫn output: /content/output
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index - <ipython-input-24-cbc7285217fb>:99
+2025-02-05 09:52:19,503 - __main__ - INFO - Đã load 31 texts và FAISS index
