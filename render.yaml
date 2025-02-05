@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: rag-fastapi
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        fromSecret: OPENAI_API_KEY
+      - key: OUTPUT_DIR # optional, if you need custom output directory
+        value: /opt/render/project/output # Example path within the Render environment
