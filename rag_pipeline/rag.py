@@ -165,7 +165,7 @@ class RAGPipeline:
             Trả lời chi tiết dựa trên thông tin trong context:""".format(context, query)
 
             response = self.client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.3,
                 max_tokens=2000
